@@ -1,0 +1,95 @@
+.btn {
+    &.btn {
+        display: inline-flex;
+        &-sm {
+            // 8 by 14
+            padding: torem(8) torem(14);
+        }
+    
+        &-md {
+            // 10 by 16
+            padding: torem(10) torem(16);
+        }
+    
+        &-lg {
+            // 10 by 18
+            padding: torem(10) torem(18);
+        }
+    
+        &-xl {
+            // 12 by 20
+            padding: torem(12) torem(20);
+        }
+    
+        &-xxl {
+            // 16 by 28
+            padding: torem(16) torem(28);
+        }
+
+        // icon only
+        &-icon {
+            &-sm {
+                padding: torem(8);
+
+                i {
+                    font-size: torem(20);
+                    width: torem(20);
+                    height: torem(20);
+                }
+            }
+    
+            &-md {
+                padding: torem(10);
+
+                i {
+                    font-size: torem(20);
+                    width: torem(20);
+                    height: torem(20);
+                }
+            }
+    
+            &-lg {
+                padding: torem(12);
+
+                i {
+                    font-size: torem(20);
+                    width: torem(20);
+                    height: torem(20);
+                }
+            }
+    
+            &-xl {
+                padding: torem(14);
+
+                i {
+                    font-size: torem(20);
+                    width: torem(20);
+                    height: torem(20);
+                }
+            }
+    
+            &-xxl {
+                padding: torem(16);
+
+                i {
+                    font-size: torem(20);
+                    width: torem(20);
+                    height: torem(20);
+                }
+            }
+        }
+    }
+
+    // text with icon (either left or right)
+    &.with-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: torem(8);
+        width: 100%;
+
+        i {
+            font-size: torem(20);
+        }
+    }
+}

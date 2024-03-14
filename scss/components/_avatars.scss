@@ -1,0 +1,9 @@
+.avatar {
+
+    &.avatar {
+        width: torem(24);
+        height: torem(24);
+    }
+
+    @include dynamic-avatar-size('avatar');
+}

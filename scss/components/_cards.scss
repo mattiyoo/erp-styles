@@ -1,0 +1,43 @@
+.kanban-card {
+    padding: torem(16);
+    border-radius: torem(12);
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: torem(8);
+
+    h4 {
+        font-size: torem(14);
+        font-family: $F1-Medium;
+        color: $black;
+        line-height: 20px;
+        text-overflow: ellipsis;
+    }
+
+    .kanban-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .assignee {
+            display: flex;
+            align-items: center;
+            gap: torem(8);
+
+            .ticket-id {
+                p {
+                    font-size: torem(14);
+                    line-height: 20px;
+                    color: $erp-gray-900;
+                    font-family: $F1-SemiBold;
+                }
+            }
+        }
+
+        span {
+            font-size: torem(16);
+            line-height: 24px;
+            color: $erp-gray-900;
+        }
+    }
+}

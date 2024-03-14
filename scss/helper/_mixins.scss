@@ -1,0 +1,44 @@
+@import "src/scss/commons/utils";
+@import "src/scss/commons/configure";
+
+$font-sizes: (
+    8: torem(8),
+    12: torem(12),
+    16: torem(16),
+    20: torem(20),
+    // Add more sizes as needed
+);
+
+$sizes: (
+    8: torem(8),
+    12: torem(12),
+    16: torem(16),
+    20: torem(20),
+    24: torem(24),
+    32: torem(32),
+    40: torem(40),
+    48: torem(48),
+    56: torem(56),
+    64: torem(64)
+);
+
+@mixin dynamic-icon-size($class) {
+    @each $size, $value in $font-sizes {
+      &.#{$class}-#{$size} {
+        i {
+            font-size: $value;
+            width: $value;
+            height: $value;
+        }
+      }
+    }
+}
+
+@mixin dynamic-avatar-size($class) {
+    @each $size, $value in $sizes {
+      &.#{$class}-#{$size} {
+        width: $value;
+        height: $value;
+      }
+    }
+}

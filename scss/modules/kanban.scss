@@ -1,0 +1,80 @@
+.board-columns {
+    display: flex;
+    
+    .kanban-board {
+        display: flex;
+        flex-grow: 1;
+        gap: torem(4);
+    
+        .board-column {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-basis: 0;
+            width: 330px !important;
+            // margin: torem(4);
+            // padding: 25px;
+            border-radius: torem(4);
+    
+    
+            .column-title {
+                // font-size: 20px;
+                // text-transform: uppercase;
+                // margin-bottom: 20px;\
+                display: flex;
+                align-items: center;
+                gap: torem(8);
+    
+                h3 {
+                    font-size: torem(12);
+                    line-height: 18px;
+                    text-transform: uppercase;
+                    color: $black;
+                }
+    
+                p {
+                    font-size: torem(14);
+                    color: $gray-iron-800;
+                    font-family: $F1-Medium;
+                    line-height: 20px;
+                }
+            }
+          }
+    
+        .tasks-container {
+            flex-grow: 1;
+            overflow-y: auto;
+            background-color: $erp-gray-25;
+            padding: torem(8);
+            border-radius: torem(18);
+    
+            display: flex;
+            flex-direction: column;
+            gap: torem(8);
+
+            .kanban-card {
+
+            }
+        }
+    }
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+      0 8px 10px 1px rgba(0, 0, 0, 0.14),
+      0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.tasks-container.cdk-drop-list-dragging .task:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+  

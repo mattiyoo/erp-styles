@@ -1,0 +1,27 @@
+.form-group {
+    label {
+        color: $erp-gray-700;
+        font-size: torem(14);
+        // font-weight: 500;
+        line-height: 20px;
+        font-family: $F1-Medium;
+
+        &.required{
+            &::after{
+                content: "*";
+                color: $error-500;
+                margin-left: $spacing-xs;
+            }
+        }
+    }
+
+    span {
+        font-size: torem(14);
+        color: $erp-gray-500;
+        line-height: 20px;
+
+        &.error{
+            color: $error-500;
+        }
+    }
+}
